@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B3q-Kf-nzC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details View Controller-->
+        <scene sceneID="0Ji-um-Fr3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1d7-Qg-UB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B3q-Kf-nzC" customClass="DetailsViewController" customModule="TableViewPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Blq-Xb-NDh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pea-Ni-FfE">
+                                <rect key="frame" x="20" y="94" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rph-i2-Fvv">
+                                <rect key="frame" x="20" y="230" width="374" height="381"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-Cw-DWH">
+                                <rect key="frame" x="20" y="626" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pea-Ni-FfE" firstAttribute="top" secondItem="pW3-Tf-A0t" secondAttribute="top" constant="50" id="4Aj-ea-Flv"/>
+                            <constraint firstItem="xg8-Cw-DWH" firstAttribute="top" secondItem="Rph-i2-Fvv" secondAttribute="bottom" constant="15" id="6XN-vM-sjJ"/>
+                            <constraint firstItem="Pea-Ni-FfE" firstAttribute="leading" secondItem="pW3-Tf-A0t" secondAttribute="leading" constant="20" id="9E0-Zy-9EI"/>
+                            <constraint firstItem="Rph-i2-Fvv" firstAttribute="leading" secondItem="pW3-Tf-A0t" secondAttribute="leading" constant="20" id="A9j-uC-Gp3"/>
+                            <constraint firstItem="Rph-i2-Fvv" firstAttribute="centerX" secondItem="pW3-Tf-A0t" secondAttribute="centerX" id="ABU-ET-BXs"/>
+                            <constraint firstItem="pW3-Tf-A0t" firstAttribute="trailing" secondItem="Pea-Ni-FfE" secondAttribute="trailing" constant="20" id="FJx-Bi-fWK"/>
+                            <constraint firstItem="pW3-Tf-A0t" firstAttribute="trailing" secondItem="xg8-Cw-DWH" secondAttribute="trailing" constant="20" id="Sy8-w8-lOE"/>
+                            <constraint firstItem="Pea-Ni-FfE" firstAttribute="centerX" secondItem="pW3-Tf-A0t" secondAttribute="centerX" id="T2X-pJ-sCa"/>
+                            <constraint firstItem="xg8-Cw-DWH" firstAttribute="leading" secondItem="pW3-Tf-A0t" secondAttribute="leading" constant="20" id="a0Z-gh-qsT"/>
+                            <constraint firstItem="pW3-Tf-A0t" firstAttribute="bottom" secondItem="xg8-Cw-DWH" secondAttribute="bottom" constant="200" id="duL-UZ-iDF"/>
+                            <constraint firstItem="xg8-Cw-DWH" firstAttribute="centerX" secondItem="pW3-Tf-A0t" secondAttribute="centerX" id="tjJ-rU-UeJ"/>
+                            <constraint firstItem="pW3-Tf-A0t" firstAttribute="trailing" secondItem="Rph-i2-Fvv" secondAttribute="trailing" constant="20" id="xN2-W0-uJB"/>
+                            <constraint firstItem="Rph-i2-Fvv" firstAttribute="top" secondItem="Pea-Ni-FfE" secondAttribute="bottom" constant="100" id="yjH-qp-ceQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pW3-Tf-A0t"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="xg8-Cw-DWH" id="vvP-c9-lFb"/>
+                        <outlet property="imageView" destination="Rph-i2-Fvv" id="H66-4S-Mka"/>
+                        <outlet property="nameLabel" destination="Pea-Ni-FfE" id="meV-hm-ltc"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="198.55072463768118" y="226.33928571428569"/>
+        </scene>
+    </scenes>
+</document>
